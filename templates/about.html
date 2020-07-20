@@ -17,7 +17,7 @@
 
     <div class="row featurette">
         <div class="col-md-7">
-            <h3>{{ loop.index }} {{ member.name}}</h3>
+            <h3><a href="/about/{{ member.url }}"> {{ loop.index }}. {{ member.name}} </a></h3>
             <p>{{ member.description }}</p>
         </div>
         <div class="col-md-5">
@@ -32,7 +32,7 @@
             <img class="featurette-image img-responsive" src="{{ member.image_source }}">
         </div>
         <div class="col-md-7">
-            <h3>{{ loop.index }} {{ member.name}}</h3>
+            <h3><a href="/about/{{ member.url }}"> {{ loop.index }}. {{ member.name}} </a></h3>
             <p>{{ member.description }}</p>
         </div>        
     </div>
@@ -46,5 +46,5 @@
     {% endif %}
 
     {% endfor %}    
-</div>
+
 {% endblock %}
